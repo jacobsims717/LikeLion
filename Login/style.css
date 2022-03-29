@@ -1,0 +1,108 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: #fff;
+    font-family: 'Pretendard', sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 4rem;
+    gap: 4rem;
+    margin: 4rem;
+}
+/* this is left  */
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+img{
+    width: 160px;
+}
+h1{
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+p{
+    font-weight: 100;
+    /* width: 420px; */
+    width: 100%;
+    max-width: 420px;
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    font-style: italic;
+}
+.content{
+    background-color: #fff;
+    color: black;
+    width: 100px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    border-radius: 4px;
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+.content:hover{
+    background-color: rgba(255, 255, 255, 0.432);
+}
+/* this is right */
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+strong{
+    font-style: italic;
+    font-size: 20px;
+}
+input{
+    border-radius: 25px;
+    height: 32px;
+    /* color: lightgrey; */
+    padding-left: 2.5rem;
+    font-size: 14px;
+    border: none;
+
+}
+.user, .password{
+    position: relative;
+}
+i{
+    position: absolute;
+    left: 1rem;
+    top: 0.5rem;
+    color: lightgrey;
+}
+
+button{
+    height: 32px;
+    padding: 0 2rem 0 2rem;
+    border-radius: 25px;
+    border: none;
+    color: #fff;
+    background-color: rgb(255, 136, 0);
+    margin-top: 0.5rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgba(255, 115, 0, 0.521);
+}
