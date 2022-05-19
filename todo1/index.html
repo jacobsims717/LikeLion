@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- first of all, wrapping components -->
+    <div class="wrapper">
+        <!-- devide title and container -->
+        <h1 class="todo-title">TO DO</h1>
+        <div class="todo-container">
+            <!-- input container -->
+            <div class="input-form">
+                <button class="complete-all-btn">🦁</button>
+                <input type="text" class="todo-input" placeholder="create to-do">
+                <button class="enter">👀</button>
+            </div>
+            <!-- list container-->
+            <ul class="todo-list">
+                <!-- hide here --------------------->
+                <!-- general and completed todo -->
+                <li class="todo-item">
+                    <button class="checkbox">✓</button>
+                    <div class="content">todo1</div>
+                    <button class="delBtn">✗</button>
+                </li>
+                <li class="todo-item checked">
+                    <button class="checkbox">✓</button>
+                    <div class="content">todo2</div>
+                    <button class="delBtn">✗</button>
+                </li>
+
+            </ul>
+            <!-- how many todo do i have? -->
+            <div class="todo-top">
+                <div class="left-items">total 0 of todo you have</div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="./todo.js"></script>
+</body>
+</html>
